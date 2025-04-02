@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./interaction.css">
+    <script src="./js/interaction.js"></script>
+    <title>互动交流</title>
+</head>
+
+<body>
+    <div>
+        <div class="header">
+            <div class="logo">
+                <a href="./index.html"><img src="./images/logo.png" alt=""></a>
+            </div>
+            <div class="title">郏县逸韵 翠影仙乡</div>
+        </div>
+        <div class="picture">
+            <img src="./images/interaction_images/header.png" alt="">
+        </div>
+        <div class="nav">
+            <ul class="menu">
+                <li>
+                    <a href="index.html">首页</a>
+                </li>
+                <li>
+                    <a href="./impression.html">印象郏县</a>
+                </li>
+                <li>
+                    <a href="./food.html">美食之旅</a>
+                </li>
+                <li>
+                    <a href="./travel_guide.html">旅游攻略</a>
+                </li>
+                <li>
+                    <a href="https://www.jiaxian.gov.cn/">新闻资讯</a>
+                    <ul class="submenu">
+                        <li><a href="https://www.jiaxian.gov.cn/">郏县人民政府</a></li>
+                        <li><a href="https://www.jiaxian.gov.cn/channels/7598.html">郏县动态</a></li>
+                        <li><a href="https://www.hnzwfw.gov.cn/">政务服务</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="./interaction.html">互动交流</a>
+                    <ul class="submenu">
+                        <li>🐧:1811911086</li>
+                        <li>📞:17513154803</li>
+                        <li>📫:1811911086@qq</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div class="content">
+            <div class="container">
+                <h1>家乡郏县 - 表单页面</h1>
+            <p>欢迎来到家乡郏县交流互动平台，为了让我们更好地了解您的需求、收集您的宝贵意见，助力郏县发展，诚邀您填写以下表单。</p>
+            <form action="">
+              <!-- 个人信息 -->
+              <h2>一、个人信息</h2>
+              <label for="name">姓名：</label>
+              <input type="text" id="name" required>
+              <br>
+              <label for="gender">性别：</label>
+              <input type="radio" id="male" name="gender" value="male">
+              <label for="male">男</label>
+              <input type="radio" id="female" name="gender" value="female">
+              <label for="female">女</label>
+              <br>
+              <label for="age">年龄：</label>
+              <select id="age" required>
+                <option value="under18">18 岁以下</option>
+                <option value="18-30">18 - 30 岁</option>
+                <option value="31-50">31 - 50 岁</option>
+                <option value="51-70">51 - 70 岁</option>
+                <option value="over70">70 岁以上</option>
+              </select>
+              <br>
+              <label for="contact">联系方式：</label>
+              <input type="text" id="contact" required>
+              <br>
+              <label for="email">电子邮箱：</label>
+              <input type="email" id="email" required>
+              <br>
+              <!-- 旅游相关 -->
+              <h2>二、旅游相关</h2>
+              <label for="visited">您是否来过郏县旅游：</label>
+              <input type="radio" id="yes" name="visited" value="yes">
+              <label for="yes">是</label>
+              <input type="radio" id="no" name="visited" value="no">
+              <label for="no">否</label>
+              <br>
+              <div id="visited-yes" style="display:none;">
+                <label for="visit-times">您来郏县旅游的次数：</label>
+                <select id="visit-times">
+                  <option value="once">1 次</option>
+                  <option value="2-3">2 - 3 次</option>
+                  <option value="4-5">4 - 5 次</option>
+                  <option value="moreThan5">5 次以上</option>
+                </select>
+                <br>
+                <label for="favorite-attractions">您最喜欢的郏县景点是（可多选）：</label>
+                <input type="checkbox" id="sansuyuan" value="sansuyuan">
+                <label for="sansuyuan">三苏园景区</label>
+                <input type="checkbox" id="linfengzhai" value="linfengzhai">
+                <label for="linfengzhai">临沣寨</label>
+                <input type="checkbox" id="wenmiao" value="wenmiao">
+                <label for="wenmiao">郏县文庙</label>
+                <input type="checkbox" id="shanshanhuiguan" value="shanshanhuiguan">
+                <label for="shanshanhuiguan">山陕会馆</label>
+                <input type="checkbox" id="haojiagou" value="haojiagou">
+                <label for="haojiagou">郝家沟</label>
+                <input type="checkbox" id="anliangzhai" value="anliangzhai">
+                <label for="anliangzhai">安良寨</label>
+                <input type="checkbox" id="lanhegudu" value="lanhegudu">
+                <label for="lanhegudu">蓝河古渡景区</label>
+                <input type="checkbox" id="kunshandaxiagu" value="kunshandaxiagu">
+                <label for="kunshandaxiagu">坤山大峡谷景区</label>
+                <br>
+                <label for="satisfaction">您对郏县旅游配套设施（如交通、住宿、餐饮）的满意度：</label>
+                <input type="radio" id="verySatisfied" name="satisfaction" value="verySatisfied">
+                <label for="verySatisfied">非常满意</label>
+                <input type="radio" id="satisfied" name="satisfaction" value="satisfied">
+                <label for="satisfied">满意</label>
+                <input type="radio" id="average" name="satisfaction" value="average">
+                <label for="average">一般</label>
+                <input type="radio" id="dissatisfied" name="satisfaction" value="dissatisfied">
+                <label for="dissatisfied">不满意</label>
+                <input type="radio" id="veryDissatisfied" name="satisfaction" value="veryDissatisfied">
+                <label for="veryDissatisfied">非常不满意</label>
+                <br>
+                <label for="improvement">您认为郏县旅游最需要改进的方面是（可多选）：</label>
+                <input type="checkbox" id="scenicDevelopment" value="scenicDevelopment">
+                <label for="scenicDevelopment">景区开发与维护</label>
+                <input type="checkbox" id="trafficConvenience" value="trafficConvenience">
+                <label for="trafficConvenience">交通便利性</label>
+                <input type="checkbox" id="accommodationQuality" value="accommodationQuality">
+                <label for="accommodationQuality">住宿品质提升</label>
+                <input type="checkbox" id="cateringFeatures" value="cateringFeatures">
+                <label for="cateringFeatures">餐饮特色强化</label>
+                <input type="checkbox" id="tourismPromotion" value="tourismPromotion">
+                <label for="tourismPromotion">旅游宣传推广</label>
+              </div>
+              <div id="visited-no" style="display:none;">
+                <label for="futureVisit">若您未来有来郏县旅游的计划：</label>
+                <input type="radio" id="yesFuture" name="futureVisit" value="yesFuture">
+                <label for="yesFuture">是</label>
+                <input type="radio" id="noFuture" name="futureVisit" value="noFuture">
+                <label for="noFuture">否</label>
+                <br>
+                <div id="futureVisit-yes" style="display:none;">
+                  <label for="expected-attractions">您最期待游览的景点是（可多选）：</label>
+                  <input type="checkbox" id="sansuyuanFuture" value="sansuyuanFuture">
+                  <label for="sansuyuanFuture">三苏园景区</label>
+                  <input type="checkbox" id="linfengzhaiFuture" value="linfengzhaiFuture">
+                  <label for="linfengzhaiFuture">临沣寨</label>
+                  <input type="checkbox" id="wenmiaoFuture" value="wenmiaoFuture">
+                  <label for="wenmiaoFuture">郏县文庙</label>
+                  <input type="checkbox" id="shanshanhuiguanFuture"
+                    value="shanshanhuiguanFuture">
+                  <label for="shanshanhuiguanFuture">山陕会馆</label>
+                  <input type="checkbox" id="haojiagouFuture" value="haojiagouFuture">
+                  <label for="haojiagouFuture">郝家沟</label>
+                  <input type="checkbox" id="anliangzhaiFuture" value="anliangzhaiFuture">
+                  <label for="anliangzhaiFuture">安良寨</label>
+                  <input type="checkbox" id="lanheguduFuture" value="lanheguduFuture">
+                  <label for="lanheguduFuture">蓝河古渡景区</label>
+                  <input type="checkbox" id="kunshandaxiaguFuture" value="kunshandaxiaguFuture">
+                  <label for="kunshandaxiaguFuture">坤山大峡谷景区</
+                  <br>
+                  <label for="informationChannel">您获取郏县旅游信息的主要渠道是（可多选）：</label>
+                  <input type="checkbox" id="socialMedia" value="socialMedia">
+                  <label for="socialMedia">社交媒体</label>
+                  <input type="checkbox" id="travelWebsites" value="travelWebsites">
+                  <label for="travelWebsites">旅游网站</label>
+                  <input type="checkbox" id="friendRecommendation" value="friendRecommendation">
+                  <label for="friendRecommendation">朋友推荐</label>
+                  <input type="checkbox" id="travelAgencyPromotion" value="travelAgencyPromotion">
+                  <label for="travelAgencyPromotion">旅行社宣传</label>
+                  <input type="checkbox" id="tvAdvertisement" value="tvAdvertisement">
+                  <label for="tvAdvertisement">电视广告</label>
+                </div>
+              </div>
+              <!-- 美食体验 -->
+              <h2>三、美食体验</h2>
+              <label for="tastedFood">您是否品尝过郏县美食：</label>
+              <input type="radio" id="yesFood" name="tastedFood" value="yesFood">
+              <label for="yesFood">是</label>
+              <input type="radio" id="noFood" name="tastedFood" value="noFood">
+              <label for="noFood">否</label>
+              <br>
+              <div id="tastedFood-yes" style="display:none;">
+                <label for="favorite-food">您最喜欢的郏县美食是（可多选）：</label>
+                <input type="checkbox" id="heleNoodles" value="heleNoodles">
+                <label for="heleNoodles">饸饹面</label>
+                <input type="checkbox" id="tofuDish" value="tofuDish">
+                <label for="tofuDish">豆腐菜</label>
+                <input type="checkbox" id="languoDish" value="languoDish">
+                <label for="languoDish">揽锅菜</label>
+                <input type="checkbox" id="roastedChicken" value="roastedChicken">
+                <label for="roastedChicken">烧鸡</label>
+                <input type="checkbox" id="beef" value="beef">
+                <label for="beef">牛肉</label>
+                <input type="checkbox" id="otherFood" value="otherFood">
+                <label for="otherFood">其他（请注明）</label>
+                <br>
+                <label for="giftBox">您是否希望郏县美食推出特色礼盒装以便携带或馈赠：</label>
+                <input type="radio" id="yesGift" name="giftBox" value="yesGift">
+                <label for="yesGift">是</label>
+                <input type="radio" id="noGift" name="giftBox" value="noGift">
+                <label for="noGift">否</label>
+              </div>
+              <!-- 文化交流 -->
+              <h2>四、文化交流</h2>
+              <label for="cultureUnderstanding">您对郏县的传统文化（如民俗、手工艺等）了解程度：</label>
+              <input type="radio" id="veryUnderstand" name="cultureUnderstanding" value="veryUnderstand">
+              <label for="veryUnderstand">非常了解</label>
+              <input type="radio" id="quiteUnderstand" name="cultureUnderstanding" value="quiteUnderstand">
+              <label for="quiteUnderstand">比较了解</label>
+              <input type="radio" id="averageUnderstand" name="cultureUnderstanding" value="averageUnderstand">
+              <label for="averageUnderstand">一般了解</label>
+              <input type="radio" id="lessUnderstand" name="文化交流" value="lessUnderstand">
+              <label for="lessUnderstand">不太了解</label>
+              <input type="radio" id="notUnderstand" name="cultureUnderstanding" value="notUnderstand">
+              <label for="notUnderstand">完全不了解</label>
+              <br>
+              <label for="interestActivity">您是否有兴趣参与郏县传统文化体验活动（如剪纸、陶艺制作等）：</label>
+              <input type="radio" id="yesActivity" name="interestActivity" value="yesActivity">
+              <label for="yesActivity">是</label>
+              <label for="noActivity" name="interestActivity" value="noActivity">
+                <input type="radio" id="noActivity" name="interestActivity" value="noActivity">
+                <label for="noActivity">否</label>
+              </label>
+              <!-- 意见与建议 -->
+              <h2>五、意见与建议</h2>
+              <label for="suggestion">请您留下对家乡郏县发展的宝贵意见与建议，无论是旅游推广、文化传承，还是城市建设等方面，您的每一句话都至关重要。</label>
+              <textarea id="suggestion" cols="30" rows="5"></textarea>
+              <br>
+              <input type="submit" value="提交按钮，点击后提交表单数据">
+            </form>
+            </div>
+        </div>
+</body>
+
+</html>
